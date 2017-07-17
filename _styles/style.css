@@ -41,12 +41,21 @@ li {
   list-style: none; }
 
 .scrollTop {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   position: fixed;
   right: 20px;
   bottom: 50px;
-  background: #c0c0c0; }
+  background: #c0c0c0;
+  transition: .4s; }
+  .scrollTop:after {
+    content: "➦";
+    position: absolute;
+    top: 25%;
+    left: 30%; }
+  .scrollTop:hover {
+    background: #353535; }
 
 /*------------------header-----------------------*/
 .header {

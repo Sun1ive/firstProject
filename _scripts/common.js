@@ -24,10 +24,6 @@ $(window).on("load", function () {
     });
 
 
-});
-
-$(window).on("load", function(){
-
     var winHeight = $(document).height();
     var step = 2;
     var timeToScroll = winHeight/step;
@@ -39,4 +35,30 @@ $(window).on("load", function(){
         }, timeToScroll);
     });
 
+
+    $(".myButton").on("click", function () {
+        $('html, body').animate({
+            scrollTop: 1500
+        }, timeToScroll);
+    });
+
+
+
+
 });
+
+// $(window).on("load", function(){
+
+//     var winHeight = $(document).height();
+//     var step = 2;
+//     var timeToScroll = winHeight/step;
+
+//     $('.scrollTop').on('click', function(){
+
+//         $('html, body').animate({
+//             scrollTop: 0
+//         }, timeToScroll);
+//     });
+
+
+// });
